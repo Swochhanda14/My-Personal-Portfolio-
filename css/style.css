@@ -278,9 +278,11 @@ section{
     transition: .3s;
 }
 
-.services-holder .card .box i{
+.services-holder .card .box .icon{
     color: #f9f9f9;
-    font-size: 25px;
+    font-size: 30px;
+    padding-bottom: 25px;
+    display: flex;
     justify-content: center;
 }
 
@@ -811,6 +813,25 @@ section{
 }
 
 /*about section style */
+
+/* services section styling  */
+
+.services-holder .card .box .icon{
+    font-size: 25px;
+
+}
+
+.services-holder .card .box h3{
+    font-size: 22px;
+    
+}
+
+.services-holder .card .box p{
+    font-size: 14px;
+}
+
+/* services section styling  */
+
 
 
     /* skill section start  */
