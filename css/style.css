@@ -18,11 +18,11 @@ html{
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #4b556b;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #2b2f39;
 }
 
 
@@ -78,24 +78,32 @@ body{
     color: #f9f9f9;
     display: inline-block;
     padding: 10px 15px;
+    transition: all .3s ease;
 }
+
+
 
 .header-holder .nav-bar ul > li > a:hover{
     color: #4b556b;
-    transition: .3s;
+    transform: scale(1.2);
+    margin-top: -3px;
+    border-bottom: 2px solid #4b556b;
+    border-radius: 0 0 0 20px;
 }
 
-.header-holder .icon-holder ul > li > a > ion-icon{
+.header-holder .icon-holder ul > li > a > .icon{
     text-decoration: none;
     font-size: 30px;
     color: #4b556b;
     display: inline-block;
     padding: 10px; 
+    transition: all .3s ease;
 }
 
-.header-holder .icon-holder ul > li > a > ion-icon:hover{
+.header-holder .icon-holder ul > li > a > .icon:hover{
     color: #f9f9f9;
-    transition: .3s;
+    transform: scale(1.2);
+    margin-top: -3px;
 }
 
 section{
@@ -124,7 +132,7 @@ section{
     padding: 10px 0px;
 }
 
-.home-container .home-content-holder .text-2{
+.home-container .home-content-holder .text-2 span{
     font-size: 37px;
     padding: 10px 0px;
     color: #7076fe;
@@ -269,13 +277,14 @@ section{
 .services-holder .card .box{
     background-color: #4b556b; 
     padding: 35px;
-    border-radius: 30px;
+    border-radius: 10px 80px 10px 80px;
     margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .3s ease;
 }
 
 .services-holder .card .box:hover{
-    border: 3px solid #7076fe;
-    transition: .3s;
+    border: 5px solid #7076fe;
 }
 
 .services-holder .card .box .icon{
@@ -387,6 +396,7 @@ section{
     background-color: #4b556b;
     border-radius: 20px;
     border: 1px solid #f9f9f9;
+    height: 18px;
 }
 
 .skill-graph .boxes .boxsize .percet2{
@@ -394,6 +404,7 @@ section{
     background-color: #4b556b;
     border-radius: 20px;
     border: 1px solid #f9f9f9;
+    height: 18px;
 }
 
 .skill-graph .boxes .boxsize .percet4{
@@ -401,13 +412,15 @@ section{
     background-color: #4b556b;
     border-radius: 20px;
     border: 1px solid #f9f9f9;
+    height: 18px;
 }
 
 .skill-graph .boxes .boxsize .percet5{
     width: 50%;
     background-color: #4b556b;
     border-radius: 20px;
-    border: 1px solid #f9f9f9;
+    border: .5px solid #f9f9f9;
+    height: 18px;
 }
 /* skill section start  */
 
@@ -771,7 +784,7 @@ section{
         /* header  */
       
         .header-holder .fa-bars{
-            font-size: 24px;
+            font-size: 22px;
           }
         
         .header-holder .logo h2{
@@ -779,10 +792,10 @@ section{
         }
         
         .header-holder .nav-bar ul > li > a{
-            font-size: 16px;
+            font-size: 15px;
         }
     
-        .header-holder .icon-holder ul > li > a > ion-icon{
+        .header-holder .icon-holder ul > li > a > .icon{
             font-size: 25px;
         }
         
