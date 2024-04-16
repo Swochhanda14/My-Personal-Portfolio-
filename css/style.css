@@ -31,7 +31,8 @@ body{
 }
 
 .header-holder{
-    background-color: #7076fe;
+    /* background-color: #7076fe; */
+    background: linear-gradient(to bottom, #7076fe, #1da1f2);
     padding: 20px 9%;
     display: flex;
     justify-content: space-between;
@@ -87,8 +88,6 @@ body{
     color: #4b556b;
     transform: scale(1.2);
     margin-top: -3px;
-    border-bottom: 2px solid #4b556b;
-    border-radius: 0 0 0 20px;
 }
 
 .header-holder .icon-holder ul > li > a > .icon{
@@ -105,6 +104,33 @@ body{
     transform: scale(1.2);
     margin-top: -3px;
 }
+
+
+/* Project navbar styling  */
+.header-holder .nav-bar .drop{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    position: absolute;
+    border: 1px solid #2b2f39;
+    display: none;    
+}
+
+.header-holder .nav-bar .drop .drop-list a{
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    color: #4b556b;
+}
+
+
+.nav-bar > ul > li:hover .drop{
+    display: block;
+    z-index: 1;
+}
+
+
+/* Project navbar styling  */
 
 section{
     padding: 25px 9%;
@@ -135,7 +161,7 @@ section{
 .home-container .home-content-holder .text-2 span{
     font-size: 37px;
     padding: 10px 0px;
-    color: #7076fe;
+    color: #1da1f2;
 }
 
 .home-container .home-content-holder .text-3{
@@ -144,16 +170,17 @@ section{
 }
 
 .home-container .home-content-holder a{
-    background-color: #7076fe;
+    background-color: #1da1f2;
+    /* background: linear-gradient(to bottom, #7076fe, #1da1f2); */
     padding: 10px;
     text-decoration: none;
     color: #f9f9f9;
     border-radius: 20px;
+    transition: all .3s ease;
 }
 
-.home-container .home-content-holder a:HOVER{
+.home-container .home-content-holder a:hover{
     background-color: #4b556b;
-    transition: .3s;
 }
 
 .home-container .img-holder .profile{
@@ -167,8 +194,9 @@ section{
 
 /*about section style */
 #about{
-    background-color: #7076fe;
-    height: auto;
+    /* background-color: #7076fe; */
+    background: linear-gradient(to bottom, #7076fe, #1da1f2);
+    min-height: 100vh;
 }
 
 .container h2{
@@ -198,7 +226,7 @@ section{
     position: relative;
 }
 
-.about-content .img-holder img{
+.about-content .img-holder .photo{
     box-shadow: 0px 0px 25px rgba(0, 0, 0, .5);
     width: 300px;
     border: 3px solid #fff;
@@ -206,6 +234,26 @@ section{
     height: 400px;
     object-fit: cover;
 }
+
+.about-content .img-holder fieldset{
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.about-content .img-holder fieldset legend{
+    color: #f9f9f9;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.about-content .img-holder fieldset .tools{
+    padding: 10px;
+    width: 20%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
 
 
 .about-content .content-holder{
@@ -238,6 +286,8 @@ section{
     color: #f9f9f9;
     text-decoration: none;
     border-radius: 25px;
+    margin-bottom: 60px;
+    display: inline-block;
 }
 
 .about-content .content-holder a:hover{
@@ -246,78 +296,169 @@ section{
     color: #4b556b;
     border: 1px solid #4b556b;
 }
+
+.about-content .content-holder fieldset{
+    margin-top: 60px;
+    width: auto;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+
+.about-content .content-holder fieldset legend{
+    color: #f9f9f9;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.about-content .content-holder fieldset p{
+    padding: 10px 10px 0px 10px;
+    color: #f1f1f1;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.about-content .content-holder fieldset p span{
+    color: #2b2f39;
+    font-size: 18px;
+}
+
+
 /*about section style */
 
 
 /* services section styling  */
 #services{
-    height: auto;
+    min-height: 100vh;
     background-color: #f9f9f9;
-}
-
-#services .container h2{
-    color: #7076fe;
-}
-
-#services .container h4{
+  }
+  
+  #services .container h2{
+    color: #1da1f2;
+  }
+  
+  #services .container h4{
     color: #4b556b;
-}
-
-.services-holder{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-}
-
-.services-holder .card{
-    display: inline-block;
-    padding: 25px;
-}
-
-.services-holder .card .box{
-    background-color: #4b556b; 
-    padding: 35px;
-    border-radius: 10px 80px 10px 80px;
-    margin-bottom: 40px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: all .3s ease;
-}
-
-.services-holder .card .box:hover{
-    border: 5px solid #7076fe;
-}
-
-.services-holder .card .box .icon{
-    color: #f9f9f9;
-    font-size: 30px;
-    padding-bottom: 25px;
+  }
+  
+  .services-holder{
     display: flex;
     justify-content: center;
-}
-
-.services-holder .card .box h3{
-    color: #f9f9f9;
+    gap: 40px;
+    padding-top: 25px;
+    margin-top: 50px;
+  }
+  
+  
+  .services-holder .card .icon{
+    color: #262626;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  
+  .services-holder .card  .card-title {
+    color: #262626;
+    font-size: 25px;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .services-holder .card  .small-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
     text-align: center;
-    padding-bottom: 25px;
-    font-size: 22px;
-    font-weight: bolder;
-}
+    margin-top: 10px;
+  }
+  
+  .services-holder .card .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #6293c8, #384c6c);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .services-holder .card .go-corner .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+  }
+  
+  .services-holder .card {
+    display: inline-block;
+    position: relative;
+    max-width: 300px;
+    max-height: 320px;
+    /* background-color: #7076fe; */
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #7076fe, #1da1f2);
+  }
+  
+  .services-holder .card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .services-holder .card:hover:before {
+    transform: scale(28);
+  }
+  
+  .services-holder .card:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .services-holder .card:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+  
+  .services-holder .card:hover .icon {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+  
+  /* services section styling  */
 
-.services-holder .card .box p{
-    color: #cccccc;
-    text-align: justify;
-    font-weight: 500;
-    line-height: 1.5;
-    padding: 15px;
-}
 
-/* services section styling  */
 
 
 /* skill section start  */
 #skills{
-    height: auto;
-    background-color: #7076fe;
+    min-height: 100vh;
+    /* background-color: #7076fe; */
+    background: linear-gradient(to bottom, #7076fe, #1da1f2);
 }
 
 .skill-holder{
@@ -397,6 +538,7 @@ section{
     border-radius: 20px;
     border: 1px solid #f9f9f9;
     height: 18px;
+    animation: photoshop 3s;
 }
 
 .skill-graph .boxes .boxsize .percet2{
@@ -405,6 +547,7 @@ section{
     border-radius: 20px;
     border: 1px solid #f9f9f9;
     height: 18px;
+    animation: illustrator 3s;
 }
 
 .skill-graph .boxes .boxsize .percet4{
@@ -413,16 +556,58 @@ section{
     border-radius: 20px;
     border: 1px solid #f9f9f9;
     height: 18px;
+    animation: figma 3s;
 }
 
 .skill-graph .boxes .boxsize .percet5{
-    width: 50%;
+    width: 60%;
     background-color: #4b556b;
     border-radius: 20px;
     border: .5px solid #f9f9f9;
     height: 18px;
+    animation: html 3s;
 }
+
+@keyframes photoshop{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes illustrator{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes figma{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+
 /* skill section start  */
+
+
 
 /* contact section styling  */
 #contact{
@@ -431,7 +616,7 @@ section{
 }
 
 #contact .container h2{
-    color: #7076fe;
+    color: #1da1f2;
 }
 
 .contact-content {
@@ -443,6 +628,9 @@ section{
 .contact-content .form-holder{
     width: 50%;
     margin: 25px 0px;
+    background-color: #d4d4d412;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .contact-content .form-holder h3{
@@ -468,15 +656,14 @@ section{
 .contact-content .form-holder form > button{
     padding: 10px 25px;
     border-radius: 20px;
-    background-color: #7076fe;
+    background-color: #1da1f2;;
     color: #f9f9f9;
     border: none;
+    transition: all .3s ease;
 }
 
 .contact-content .form-holder form > button:hover{
     background-color: #4b556b;
-    transition: .3s;
-    
 }
 
 .contact-content .side-bar{
@@ -486,7 +673,7 @@ section{
 
 .contact-content .side-bar h3{
     font-size: 25px;
-    color: #7076fe;
+    color: #1da1f2;
     padding-bottom: 25px;
 }
 
@@ -524,35 +711,10 @@ section{
 }
 
 .contact-content .side-bar .info-holder .row .info .sub-title{
-    color: #7076fe;
+    color: #1da1f2;
     font-size: 18px;
 }
 
-/* .contact-content .side-bar .info-holder .social{
-    display: flex;
-    list-style-type: none;
-    justify-content: start;
-    padding-top: 25px;
-}
-
-.contact-content .side-bar .info-holder .social li > a{
-    color: #f9f9f9;
-    font-size: 30px;
-    display: inline-block;
-    padding: 25px;
-}
-
-.contact-content .side-bar .info-holder .social li > a > ion-icon{
-    background-color: #7076fe;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.contact-content .side-bar .info-holder .social li > a > ion-icon:hover{
-    transform: scale(1.2);
-    border: 1px solid #4b556b;
-    transition: .3s;
-} */
 
 
 .contact-content .side-bar .info-holder  .social{
@@ -632,119 +794,158 @@ section{
     color: #4b556b;
 }
 
-
-
-
 /* contact section styling  */
 
-#login-form-section{
-    height: 100vh;
+
+/* project styling */
+.project-container{
+    max-width: 1224px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
 }
 
-.login-form-holder{
-    margin-top: 80px;
+.project-container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1da1f2;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.project-container h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4b556b;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.project-container fieldset{
+    border: 1px solid #4b556b;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.project-container fieldset legend{
+    color: #4b556b;
+    font-size: 25px;
+    font-weight: 700; 
+    text-transform: capitalize;
+    
+}
+
+.project-container fieldset .gallery{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.project-container fieldset .gallery .column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-container fieldset .gallery .column .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.project-container fieldset .gallery .column .photo img:hover{
+    transform: scale(1.08);
+    border: 1px solid #1da1f2;
+}
+
+.project .popup-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.project .popup-img span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #f9f9f9;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.project .popup-img img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 5px solid #f9f9f9;
+    border-radius: 5px;
+    width: 40%;
+    object-fit: cover;
 }
 
-.login-form-holder .login-form-content{
-    background-color: #f9f9f9;
-    padding: 25px;
-    border-bottom: 5px solid #7076fe;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
-    height: auto;
-    width: 400px;
+.contact-box fieldset{
+    border: 1px solid #4b556b;
+    padding: 20px;
     border-radius: 20px;
+    margin-top: 40px;
 }
 
-.login-form-holder .login-form-content .buttons{
-   display: flex;
-   justify-content: center;
-   padding: 25px 0px;
+.contact-box fieldset .info{
+    display: flex;
+    justify-content: start;
+    gap: 25px;
 }
 
-.login-form-holder .login-form-content .buttons a{
-    padding: 15px 25px;
-    width: 100%;
-    height: auto;
-    border: 1px solid #4b556b;
-    border-radius: 5px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, .1);
-}
-
-.login-form-holder .login-form-content .buttons a{
-    text-decoration: none;
+.contact-box fieldset legend{
+    font-size: 25px;
     color: #4b556b;
-    font-size: 16px;
-    text-align: center;
+    text-transform: capitalize;
+    margin-left: 30px;
 }
 
-.login-form-holder .login-form-content .buttons a:hover{
-    background-color: #7076fe;
-    color: #f9f9f9;
-    border: 1px solid #f9f9f9;
-    transition: .3s;
-}  
-
-.login-form-holder .login-form-content .form-title{
-    color: #4b556b;
-    font-size: 28px;
-    text-align: center;
-    padding: 15px;
-}
-
-.login-form-holder .login-form-content  .login-form .label-box{
-    display: block;
-    margin-bottom: 25px;
-}
-
-.login-form-holder .login-form-content  .login-form  .label-box  .input-box{
-    width: 98%;
-    height: 40px;
-    padding-left: 5px;
+.contact-box fieldset .info p{
+    color: #909090;
     font-size: 18px;
-    border-radius: 5px;
-    border: .5px solid #4b556b;
-    border-bottom: 1px solid #4b556b;
-    background-color: #f9f9f9;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, .1);
-} 
+    
+}
 
-.login-form-holder .login-form-content  .login-form  .btn{
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid #4b556b;
+.contact-box fieldset .info p span{
+    color: #2b2f39;
+}
+
+.contact-box fieldset .info a button[type="submit"]{
+    padding: 10px 100px;
+    margin-top: -7px;
+    margin-left: 20px;
     font-size: 18px;
-    color: #4b556b;
-    background-color: #f9f9f9;
-}
-
-.login-form-holder .login-form-content  .login-form  .btn:hover{
-    background-color: #7076fe;
+    background-color: #1da1f2;
+    border: none;
+    border-radius: 20px;
     color: #f9f9f9;
-    transition: .3s;
-    border: 1px solid #f9f9f9;
+    transition: all .3s;
 }
 
-.login-form-holder .login-form-content  .login-form  p{
-    text-align: center;
-    padding: 15px;
-    color: #4b556b;
+.contact-box fieldset .info a button:hover{
+    background-color: #4b556b;
 }
 
-.login-form-holder .login-form-content  .login-form  p > a{
-    color: #7076fe;
-    text-decoration: none;
+.contact-box fieldset .info a button:active{
+    transform: scale(.9);
 }
-
-.login-form-holder .login-form-content  .login-form  p > a:hover{
-    text-decoration: underline;
-    transition: .3s;
-}
-/* login form styling */
+/* project styling */
 
 
 /*footer section styling */
@@ -756,7 +957,7 @@ section{
 }
 
 .footer small a{
-   color: #7076fe; 
+   color: #1da1f2; 
 }
 /*footer section styling */
 
@@ -799,6 +1000,7 @@ section{
             font-size: 25px;
         }
         
+
          /* header */
         
 
@@ -835,6 +1037,10 @@ section{
         background-color: #4b556b;
         color: #f9f9f9;
       }
+
+      .header-holder .nav-bar .drop{
+       display: none;
+    }
 
       .home-container .content-holder{
         justify-content: center;
@@ -911,21 +1117,46 @@ section{
 
 /* services section styling  */
 
-.services-holder .card .box .icon{
-    font-size: 25px;
+  
+  .services-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 25px;
+    margin-top: 50px;
+  }
+  
+  
+  .services-holder .card .icon{
+    color: #262626;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  .services-holder .card  .card-title {
+    color: #262626;
+    font-size: 2em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .services-holder .card  .small-desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+    text-align: center;
+  }
 
-}
 
-.services-holder .card .box h3{
-    font-size: 22px;
-    
-}
-
-.services-holder .card .box p{
-    font-size: 14px;
-}
-
-/* services section styling  */
+  /* services section styling  */
 
 
 
@@ -985,6 +1216,24 @@ section{
 }
 /* skill section start  */
 
+
+/* project section styling  */
+
+.project-holder .card .box .icon{
+    font-size: 25px;
+
+}
+
+.project-holder .card .box h3{
+    font-size: 22px;
+    
+}
+
+.project-holder .card .box p{
+    font-size: 14px;
+}
+
+/*  project section styling  */
 
 
     /* Side-bar */
@@ -1046,37 +1295,20 @@ section{
 
         /* social */
 
-    /* login form respoisive */
-    .login-form-holder .login-form-content{
-        padding: 25px;
-        height: auto;
-        width: 300px;
-        border-radius: 20px; 
-    }
-     
-     .login-form-holder .login-form-content .buttons a{
-         font-size: 12px;
-         text-align: center;
-     }
-    
-     .login-form-holder .login-form-content .form-title{
-         font-size: 24px;
-         padding: 15px;
-     }
-     
-     .login-form-holder .login-form-content  .login-form  .label-box  .input-box{
-         width: 98%;
-         height: 40px;
-         padding-left: 5px;
-         font-size: 14px;
-         border-radius: 5px;
-     } 
-     
-     .login-form-holder .login-form-content  .login-form  .btn{
-         font-size: 14px;
-     }
+        /* project responsive  */
+        .project-container fieldset .gallery{
+            flex-direction: column;
+        }
 
-    /* login form respoisive */
+        .contact-box fieldset .info{
+            flex-direction: column;
+        }
+
+        .project .popup-img img{
+            width: 95%;
+        }
+        /* project responsive  */
+
   }
 
   @media (max-width:450px){
@@ -1087,4 +1319,3 @@ section{
         font-size: 15px;
       }
   }
-  /*responsive media*/

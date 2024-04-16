@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Contact me</title>
+    <link rel="shortcut icon" type="x-icon" href="media/Untitled-1.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<style>
+    /* login form styling */
+</style>
+
+<body>
+    <!--header section-->
+    <header class="header-holder">
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <!-- logo bar -->
+        <div class="logo">
+            <h2>Portfo<span>lio.</span></h2>
+        </div>
+        <!-- logo bar -->
+
+        <!-- nav-bar  -->
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Skills</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- nav-bar  -->
+
+        <!-- icon bar  -->
+        <div class="icon-holder">
+            <ul>
+                <li><a href="https://github.com/Swochhanda14" target="_blank"><i
+                            class="fa-brands fa-github icon"></i></a></li>
+            </ul>
+        </div>
+        <!-- icon bar  -->
+    </header>
+    <!--header section-->
+
+    <!--contact section start-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact me</h2>
+            <h4>Get in touch</h4>
+
+            <div class="contact-content">
+
+                <!-- form container  -->
+                <article class="form-holder">
+                    <h3>Inbox Me</h3>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="02a90621-4cb4-4340-8c2a-065632b34952">
+                        <label for="name">
+                            <input type="text" name="name" id="name" placeholder="Username" required>
+                        </label>
+
+                        <label for="mail">
+                            <input type="email" name="mail" id="mail" placeholder="Email" required>
+                        </label>
+
+                        <label for="address">
+                            <input type="text" name="address" id="address" placeholder="Address" required>
+                        </label>
+
+                        <label for="subject">
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        </label>
+
+                        <label for="msg">
+                            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message here...."></textarea>
+                        </label>
+
+
+                        <button class="submit" onclick="sendMail()">submit</button>
+                    </form>
+                </article>
+                <!-- form container  -->
+
+                <!-- side bar  -->
+                <aside class="side-bar">
+                    <h3>Have some Questions?</h3>
+                    <p>We're here to help and answer any question you might have. We look forward to hearing from you.
+                    </p>
+                    <p>You can contact via my social media which are given below or You can login through this page and
+                        Inbox us.</p>
+
+                    <div class="info-holder">
+                        <!-- info about my self  -->
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Swochhanda Karanjeet</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <address class="sub-title">Kathmandu, Nepal</address>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">swochhanda14@gmail.com</div>
+                            </div>
+                        </div>
+                        <!-- info about my self  -->
+
+                        <!-- social account  -->
+                        <!-- <ul class="social">
+                            <li><a href="https://www.facebook.com/swocxanda.karanjeet"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="https://www.instagram.com/swoxanda/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://twitter.com/bakasta3216"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCu9mA8RdOEr7pIGafnPNqog"><ion-icon name="logo-youtube"></ion-icon></i></a></li>
+                            <li><a href="https://www.twitch.tv/kiyotaka95"><ion-icon name="logo-twitch"></ion-icon></a></li>
+                        </ul> -->
+
+
+
+
+                        <ul class="social">
+
+                            <li>
+                                <a href="https://www.facebook.com/swocxanda.karanjeet">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                                <span>Facebook</span>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/swoxanda/">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                                <span>Instagram</span>
+                            </li>
+
+                            <li>
+                                <a href="https://twitter.com/bakasta3216">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                                <span>Linkedin</span>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCu9mA8RdOEr7pIGafnPNqog">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                                <span>Youtube</span>
+                            </li>
+
+                            <li>
+                                <a href="https://www.twitch.tv/kiyotaka95">
+                                    <ion-icon name="logo-twitch"></ion-icon>
+                                </a>
+                                <span>Twitch</span>
+                            </li>
+
+                        </ul>
+
+                        <!-- social account  -->
+                    </div>
+                </aside>
+                <!-- side bar  -->
+            </div>
+        </div>
+    </section>
+    <!--contact section start-->
+
+
+
+    <!--footer section start-->
+    <footer class="footer">
+        <small>Created By <a href="#">SwocXandakaranjeet</a> | Copyright &copy; 2024 All rights reserved.</small>
+    </footer>
+    <!--footer section start-->
+
+
+    <!-- icon link  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <!-- icon link  -->
+
+   
+
+</body>
+
+</html>
