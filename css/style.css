@@ -243,6 +243,7 @@ section{
 
 .about-content .img-holder fieldset{
     width: 300px;
+    height: auto;
     border-radius: 20px;
     border: 1px solid #fff;
 }
@@ -254,13 +255,23 @@ section{
     font-weight: 600;
 }
 
+
 .about-content .img-holder fieldset .tools{
-    padding: 10px;
-    width: 20%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.about-content .img-holder fieldset .tools img.tool{
+    padding: 10px;
+    width: 70px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    transition: all .3s;
+}
+
+.about-content .img-holder fieldset .tools img.tool:hover{
+    transform: scale(1.2);
+}
 
 
 .about-content .content-holder{
@@ -295,17 +306,18 @@ section{
     border-radius: 25px;
     margin-bottom: 60px;
     display: inline-block;
+    transition: all .3s;
+    font-weight: 600;
 }
 
 .about-content .content-holder a:hover{
-    background-color: #f9f9f9;
-    transition: .3s;
+    background-color: transparent;
     color: #4b556b;
-    border: 1px solid #4b556b;
+    border: 2px solid #4b556b;
 }
 
 .about-content .content-holder fieldset{
-    margin-top: 60px;
+    margin-top: 20px;
     width: auto;
     border-radius: 20px;
     border: 1px solid #fff;
@@ -352,10 +364,24 @@ section{
   
   .services-holder{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 40px;
     padding-top: 25px;
     margin-top: 50px;
+  }
+  
+  .services-holder .card {
+    display: inline-block;
+    position: relative;
+    max-width: 300px;
+    max-height: 320px;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #7076fe, #1da1f2);
   }
   
   
@@ -410,20 +436,6 @@ section{
     color: white;
   }
   
-  .services-holder .card {
-    display: inline-block;
-    position: relative;
-    max-width: 300px;
-    max-height: 320px;
-    /* background-color: #7076fe; */
-    border-radius: 10px;
-    padding: 2em 1.2em;
-    margin: 12px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    background: linear-gradient(to bottom, #7076fe, #1da1f2);
-  }
   
   .services-holder .card:before {
     content: '';
@@ -508,12 +520,14 @@ section{
     text-transform: capitalize;
     border-radius: 30px;
     border: 1px solid #4b556b;
+    transition: all .3s;
+    font-weight: 600;
 }
 
 .skill-holder .content a:hover{
-    background-color: #f9f9f9;
-    transition: .3s;
+    background-color: transparent;
     color: #4b556b;
+    border: 2px solid #4b556b;
 }
 
 .skill-graph{
@@ -1127,9 +1141,52 @@ section{
     font-size: 15px;
 }
 
+.about-content .img-holder fieldset{
+    width: 300px;
+    height: 100px;
+    position: relative;
+}
+
+.about-content .img-holder fieldset legend{
+    font-size: 20px;
+}
+
+
+.about-content .img-holder fieldset .tools{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: -130px;
+}
+
+.about-content .img-holder fieldset .tools img.tool{
+    width: 40px;
+    padding-left: 40px;
+}
+
+
+.about-content .content-holder fieldset legend{
+    font-size: 20px;
+
+}
+
+.about-content .content-holder fieldset p{
+    font-size: 13px;
+}
+
+.about-content .content-holder fieldset p span{
+    font-size: 15px;
+}
+
 /*about section style */
 
 /* services section styling  */
+
+.services-holder .card {
+    max-width: 90%;
+    max-height: 320px;
+  }
+  
 
   .services-holder .card .icon{
     font-size: 20px;
