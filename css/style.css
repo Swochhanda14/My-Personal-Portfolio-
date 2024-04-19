@@ -652,8 +652,8 @@ section{
 .contact-content .form-holder{
     width: 50%;
     margin: 25px 0px;
-    background-color: #d4d4d412;
-    padding: 10px;
+    background-color: #d4d4d44b;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -671,10 +671,10 @@ section{
 
 .contact-content .form-holder form > label > input,
 .contact-content .form-holder form > label > textarea{
-    width: 95%;
+    width: 96%;
     padding: 10px;
     border: 1px solid #4b556b;
-    border-radius: 20px;
+    border-radius: 12px;
 }
 
 .contact-content .form-holder form > button{
@@ -1092,11 +1092,11 @@ section{
       }
 
       .contact-content .form-holder{
-        width: 100%;
+        width: 91%;
       }
 
       .contact-content .side-bar{
-        width: 90%;
+        width: 91%;
       }
 
      .contact-content .side-bar .social li > a > ion-icon{
@@ -1308,22 +1308,6 @@ section{
     /* Side-bar */
 
     /* social */
-
-    /* .contact-content .side-bar .info-holder .social{
-        flex-direction: column;
-        padding-top: 25px;
-    }
-    
-    .contact-content .side-bar .info-holder .social li > a{
-        font-size: 24px;
-        padding: 10px 0px;
-    }
-    
-    .contact-content .side-bar .info-holder .social li > a > ion-icon{
-        padding: 10px;
-    } */
-
-
 
     .contact-content .side-bar .info-holder  .social{
         display: flex;
