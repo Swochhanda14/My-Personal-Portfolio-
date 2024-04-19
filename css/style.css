@@ -995,7 +995,7 @@ section{
     }
   }
 
-  @media (max-width:750px){
+  @media (max-width:768px){
         /* header  */
       
         .header-holder .fa-bars{
@@ -1131,42 +1131,19 @@ section{
 
 /* services section styling  */
 
-  
-  .services-holder{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding-top: 25px;
-    margin-top: 50px;
-  }
-  
-  
   .services-holder .card .icon{
-    color: #262626;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
   }
-  
-  
-  
+
+
   
   .services-holder .card  .card-title {
-    color: #262626;
-    font-size: 2em;
-    line-height: normal;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    display: flex;
-    justify-content: center;
+    font-size: 2.5em;
   }
   
   .services-holder .card  .small-desc {
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.5em;
-    color: #452c2c;
-    text-align: center;
   }
 
 
